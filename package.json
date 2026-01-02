@@ -1,0 +1,28 @@
+{
+	"name": "@eyenest/common",
+	"version": "1.0.0",
+	"description": "Core shared components for EyeNest microservice ecosystem",
+	"main": "dist/index.js",
+	"types": "dist/index.d.ts",
+	"files": [
+		"dist"
+	],
+	"publishConfig": {
+		"access": "public"
+	},
+	"scripts": {
+		"build": "tsc -p tsconfig.build.json",
+		"format": "prettier --write \"src/**/*.ts\""
+	},
+	"devDependencies": {
+		"@types/node": "^24.10.1",
+		"prettier": "^3.7.3",
+		"typescript": "^5.9.3"
+	},
+	"dependencies": {
+		"@nestjs/common": "^11.1.9",
+		"@nestjs/config": "^4.0.2",
+		"@nestjs/microservices": "^11.1.9",
+		"@eyenest/contracts": "^1.0.0"
+	}
+}
