@@ -20,9 +20,9 @@
 		"typescript": "^5.9.3"
 	},
 	"dependencies": {
+		"@eyenest/contracts": "^1.2.0",
 		"@nestjs/common": "^11.1.9",
 		"@nestjs/config": "^4.0.2",
-		"@nestjs/microservices": "^11.1.9",
-		"@eyenest/contracts": "^1.0.0"
+		"@nestjs/microservices": "^11.1.9"
 	}
 }
