@@ -1,18 +1,21 @@
-import { Global, Module } from '@nestjs/common'
+import { DynamicModule, Module } from '@nestjs/common'
 import { ClientProxy } from '@nestjs/microservices'
+
 import { TypedEventEmitter } from './emitter.service'
 
-@Global()
-@Module({
-	providers: [
-		{
-			provide: TypedEventEmitter,
-			inject: ['RMQ_CLIENT'],
-			useFactory: (client: ClientProxy) => {
-				return new TypedEventEmitter(client)
-			},
-		},
-	],
-	exports: [TypedEventEmitter],
-})
-export class EventEmitterModule {}
+@Module({})
+export class EventEmitterModule {
+	static register(rmqToken: string): DynamicModule {
+		return {
+			module: EventEmitterModule,
+			providers: [
+				{
+					provide: TypedEventEmitter,
+					inject: [rmqToken],
+					useFactory: (client: ClientProxy) => new TypedEventEmitter(client),
+				},
+			],
+			exports: [TypedEventEmitter],
+		}
+	}
+}
