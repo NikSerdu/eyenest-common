@@ -1,6 +1,6 @@
 {
 	"name": "@eyenest/common",
-	"version": "1.1.1",
+	"version": "1.2.0",
 	"description": "Core shared components for EyeNest microservice ecosystem",
 	"main": "dist/index.js",
 	"types": "dist/index.d.ts",
