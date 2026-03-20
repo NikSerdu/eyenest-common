@@ -1,3 +1,6 @@
 export * from './enums'
 export * from './grpc'
 export * from './utils'
+export * from './event-emitter'
+export * from './interfaces'
+export * from './types'
