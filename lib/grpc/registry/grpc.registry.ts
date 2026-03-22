@@ -16,4 +16,9 @@ export const GRPC_CLIENTS = {
 		protoPath: PROTO_PATHS.VIDEO,
 		env: 'VIDEO_GRPC_URL',
 	},
+	EVENTS_PACKAGE: {
+		package: 'events.v1',
+		protoPath: PROTO_PATHS.EVENTS,
+		env: 'EVENTS_GRPC_URL',
+	},
 } as const
