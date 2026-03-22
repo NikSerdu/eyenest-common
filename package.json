@@ -20,7 +20,7 @@
 		"typescript": "^5.9.3"
 	},
 	"dependencies": {
-		"@eyenest/contracts": "^1.5.4",
+		"@eyenest/contracts": "^1.5.6",
 		"@nestjs/common": "^11.1.9",
 		"@nestjs/config": "^4.0.2",
 		"@nestjs/microservices": "^11.1.9",
