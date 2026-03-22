@@ -10,4 +10,7 @@ export interface RmqEventMap {
 	[Events.MOTION_DETECTED]: { cameraId: string; timestamp: number }
 	[Events.MOTION_ON]: { cameraId: string }
 	[Events.MOTION_OFF]: { cameraId: string }
+
+	[Events.CAMERA_DELETE]: { cameraId: string }
+	[Events.LOCATION_DELETE]: { locationId: string; cameraIds: string[] }
 }

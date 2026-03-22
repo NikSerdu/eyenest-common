@@ -6,4 +6,6 @@ export enum Events {
 	MOTION_DETECTED = 'motion.detected',
 	MOTION_ON = 'motion.on',
 	MOTION_OFF = 'motion.off',
+	CAMERA_DELETE = 'camera.delete',
+	LOCATION_DELETE = 'location.delete',
 }
